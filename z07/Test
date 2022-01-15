@@ -1,0 +1,25 @@
+public class Test {
+    public static void main(String[] args)
+    {
+        Adres adres1 = new Adres("Polna",12,"Olsztyn","11-009");
+        Adres adres2 = new Adres("Dawna",13,"Olsztyn","11-015");
+        adres1.pokaz();
+        System.out.println(adres1.przed(adres2));
+        System.out.println(adres2.przed(adres1));
+
+        Osoba osoba=new Osoba("Nikt",2000);
+        System.out.println(osoba);
+        System.out.println(osoba.getNazwisko());
+        System.out.println(osoba.getRokUrodzenia());
+        Student student=new Student("Qwerty",1999,"zaden");
+        System.out.println(student);
+        System.out.println(student.getKierunek());
+        Nauczyciel nauczyciel=new Nauczyciel("Kowalski",1973,2115);
+        System.out.println(nauczyciel);
+        System.out.println(nauczyciel.getPensja());
+
+        BetterRectangle prostokat=new BetterRectangle(2,1,3,5);
+        System.out.println("obwód: "+prostokat.getPerimeter());
+        System.out.println("pole: "+prostokat.getArea());
+    }
+}
