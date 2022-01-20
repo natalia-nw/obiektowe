@@ -1,0 +1,152 @@
+//zad1
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> lista1 = new ArrayList<Integer>();
+        ArrayList<Integer> lista2 = new ArrayList<Integer>();
+        lista1.add(1);
+        lista1.add(2);
+        lista1.add(3);
+        lista2.add(9);
+        lista2.add(5);
+        lista2.add(7);
+        ArrayList<Integer> suma = append(lista1,lista2);
+        suma.forEach(x -> System.out.println(x));
+    }
+    public static ArrayList<Integer> append(ArrayList<Integer> a, ArrayList<Integer> b) {
+        ArrayList<Integer> suma = new ArrayList<Integer>();
+        for (int i = 0; i < a.size(); i++) {
+            suma.add(a.get(i));
+        }
+        for (int i = 0; i < b.size(); i++) {
+            suma.add(b.get(i));
+        }
+        return suma;
+    }
+}
+
+//zad2
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> lista1 = new ArrayList<Integer>();
+        ArrayList<Integer> lista2 = new ArrayList<Integer>();
+        lista1.add(1);
+        lista1.add(2);
+        lista1.add(3);
+        lista2.add(5);
+        lista2.add(7);
+        ArrayList<Integer> suma = merge(lista1,lista2);
+        suma.forEach(x -> System.out.println(x));
+    }
+    public static ArrayList<Integer> merge(ArrayList<Integer> a, ArrayList<Integer> b)
+    {
+        ArrayList<Integer> suma = new ArrayList<Integer>();
+        int roz=0;
+        if(a.size()<b.size())
+            roz = b.size();
+        else
+            roz = a.size();
+        for(int i=0;i<roz; i++)
+        {
+            if(a.size()>i)
+                suma.add(a.get(i));
+            if (b.size()>i)
+                suma.add(b.get(i));
+        }
+        return suma;
+    }
+}
+
+//zad3
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> lista = new ArrayList<Integer>();
+        ArrayList<Integer> lista2 = new ArrayList<Integer>();
+        lista.add(7);
+        lista.add(4);
+        lista.add(0);
+        lista.add(3);
+        lista2.add(6);
+        lista2.add(8);
+        ArrayList<Integer> suma = mergeSorted(lista,lista2);
+        suma.forEach(x -> System.out.println(x));
+    }
+    public static ArrayList<Integer> mergeSorted(ArrayList<Integer> a, ArrayList<Integer> b)
+    {
+        ArrayList<Integer> suma = new ArrayList<Integer>();
+        int roz=0;
+        if(a.size()<b.size())
+            roz = b.size();
+        else
+            roz = a.size();
+        for(int i=0;i<roz; i++)
+        {
+            if(a.size()>i)
+                suma.add(a.get(i));
+            if (b.size()>i)
+                suma.add(b.get(i));
+        }
+        Collections.sort(suma);
+        return suma;
+    }
+}
+
+//zad4
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> lista = new ArrayList<Integer>();
+        lista.add(1);
+        lista.add(3);
+        lista.add(5);
+        lista.add(7);
+        ArrayList<Integer> suma = reversed(lista);
+        suma.forEach(x -> System.out.println(x));
+    }
+    public static ArrayList<Integer> reversed(ArrayList<Integer> a)
+    {
+        ArrayList<Integer> nowa = new ArrayList<Integer>();
+        for(int i=a.size()-1; i>=0;i--)
+        {
+            nowa.add(a.get(i));
+        }
+        return nowa;
+    }
+}
+
+//zad5
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList<Integer> lista = new ArrayList<Integer>();
+        lista.add(2);
+        lista.add(4);
+        lista.add(6);
+        lista.add(8);
+        reverse(lista);
+        lista.forEach(x -> System.out.println(x));
+    }
+    public static void reverse(ArrayList<Integer> a)
+    {
+        for(int i=a.size()-1, j=0; i>=j;i--,j++)
+        {
+            int bufor = a.get(i);
+            a.set(i, a.get(j));
+            a.set(j,bufor);
+
+        }
+    }
+}
