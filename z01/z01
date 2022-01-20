@@ -1,0 +1,319 @@
+import java.util.Scanner;
+import static java.lang.Math.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+//        //zad1.1a
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby = new double[n];
+//        double wynnik=0;
+//        for(int i = 0; i<=liczby.length-1; i++)
+//        {
+//          liczby[i] = in.nextDouble();
+//          wynik+=liczby[i];
+//       }
+//        System.out.println("suma tych liczb wynosi: " + wynik);
+
+//        //zad1.1b
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby2 = new double[n];
+//        double wynik=1;
+//        for(int i = 0; i<=liczby2.length-1; i++)
+//        {
+//            liczby2[i] = in.nextDouble();
+//            wynik*=liczby2[i];
+//        }
+//        System.out.println("iloczyn tych liczb wynosi: " + wynik);
+
+//        //zad1.1c
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby = new double[n];
+//        double wynik=0;
+//        for(int i = 0; i<=liczby.length-1; i++)
+//        {
+//            liczby[i] = in.nextDouble();
+//            wynik+=abs(liczby[i]);
+//        }
+//        System.out.println("suma wartości bezwzględnych wynosi: " + wynik);
+
+//        //zad1.1d
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby = new double[n];
+//        double wynik=0;
+//        for(int i = 0; i<=liczby.length-1; i++)
+//        {
+//            liczby[i] = in.nextDouble();
+//            wynik+=sqrt(abs(liczby[i]));
+//        }
+//        System.out.println("suma pierwiastków wartości bezwzględnych wynosi: " + wynik);
+
+//        //zad1.1e
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby = new double[n];
+//        double wynik=1;
+//        for(int i = 0; i<=liczby.length-1; i++)
+//        {
+//            liczby[i] = in.nextDouble();
+//            wynik*=abs(liczby[i]);
+//        }
+//        System.out.println("iloczyn wartości bezwzględnych wynosi: " + wynik);
+
+//        //zad1.1f
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby = new double[n];
+//        double wynik=0;
+//        for(int i = 0; i<=liczby.length-1; i++)
+//        {
+//            liczby[i] = in.nextDouble();
+//            wynik+=pow(liczby[i],2);
+//        }
+//        System.out.println("suma kwadratow wynosi: " + wynik);
+
+//        //zad1.1g
+//        System.out.println("podaj n: ");
+//        int n = in.nextInt();
+//        System.out.println("podaj liczby: ");
+//        double[] liczby = new double[n];
+//        double wynik=0;
+//        double wynik2=1;
+//        for(int i = 0; i<=liczby.length-1; i++)
+//        {
+//            liczby[i] = in.nextDouble();
+//            wynik+=liczby[i];
+//            wynik2*=liczby[i];
+//        }
+//        System.out.println(wynik);
+//        System.out.println(wynik2);
+
+//        //zad1.1h
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        double wynik=0;
+//        System.out.println("podaj " + n + " liczb: ");
+//        for(int i=0; i<n; i++)
+//        {
+//            double a = scaner.nextDouble();
+//            if(i%2==1)
+//            {
+//                a=a*-1;
+//            }
+//
+//            wynik = wynik + a;
+//        }
+//        System.out.println(wynik);
+
+//        //zad1.1i
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        double wynik=0;
+//        System.out.println("podaj " + n + " liczb: ");
+//        for(int i=1; i<=n; i++)
+//        {
+//            double a = scaner.nextDouble();
+//            if(i%2==1)
+//            {
+//                a=a*-1;
+//            }
+//            int silnia=1;
+//            for(int j=1; j<=i; j++)
+//            {
+//                silnia=silnia*j;
+//            }
+//            wynik = wynik + (a/silnia);
+//        }
+//        System.out.println(wynik);
+
+//        //zad1.2
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double a1=scaner.nextDouble();
+//        double[] tab = new double[n-1];
+//        for(int i=0; i<n-1; i++)
+//        {
+//            tab[i]=scaner.nextDouble();
+//        }
+//        for(int i=0; i<n-1; i++)
+//        {
+//            System.out.println(tab[i]);
+//        }
+//        System.out.println(a1);
+
+//        //zad2.1a
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double[] liczby = new double[n];
+//        int counter = 0;
+//        for(int i=0; i<=liczby.length-1; i++){
+//            liczby[i] = scaner.nextDouble();
+//            if(liczby[i]%2!=0)
+//            counter++;
+//       }
+//        System.out.println(counter);
+
+//        //zad2.1b
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double[] liczby = new double[n];
+//        int counter = 0;
+//        for(int i=0; i<=liczby.length-1; i++){
+//            liczby[i] = scaner.nextDouble();
+//            if(liczby[i]%3==0 && liczby[i]%5!=0)
+//                counter++;
+//       }
+//        System.out.println(counter);
+
+//        //zad2.1c
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double[] liczby = new double[n];
+//        int counter = 0;
+//        for(int i = 0; i<=liczby.length-1; i++){
+//            liczby[i] = scaner.nextDouble();
+//            if(sqrt(liczby[i]) %2 == 0)
+//            counter++;
+//       }
+//        System.out.println(counter);
+
+//        //zad2.1f
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double[] liczby = new double[n];
+//        int counter = 0;
+//        for(int i=0; i<=liczby.length-1; i++){
+//            liczby[i] = scaner.nextDouble();
+//            if((i+1)%2!=0 && liczby[i]%2==0)
+//                counter++;
+//       }
+//        System.out.println(counter);
+
+//        //zad2.1g
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double[] liczby = new double[n];
+//        int counter = 0;
+//        for(int i=0; i<=liczby.length-1; i++){
+//            liczby[i] = scaner.nextDouble();
+//            if(liczby[i]%2!=0 && liczby[i]>=0)
+//                counter++;
+//        }
+//        System.out.println(counter);
+
+//        //zad2.2
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        double[] liczby = new double[n];
+//        int counter=0;
+//        for(int i=0; i<=liczby.length-1; i++){
+//            liczby[i] = scaner.nextDouble();
+//            if(liczby[i] > 0)
+//                counter+=2*liczby[i];
+//        }
+//        System.out.println(counter);
+
+//        //zad2.3
+//        Scanner scaner = new Scanner(System.in);
+//        int dod=0;
+//        int zero=0;
+//        int uj=0;
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        System.out.println("podaj " + n + " liczb: ");
+//        for(int i=0; i<n; i++)
+//        {
+//            double a=scaner.nextDouble();
+//            if(a>0)
+//                dod++;
+//            else
+//            {
+//                if(a==0)
+//                    zero++;
+//                else
+//                    uj++;
+//            }
+//        }
+//        System.out.println("dodatnie: " + dod  +"\nzera: "+zero +"\nujemne: "+uj);
+
+//        //zad2.4
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n = scaner.nextInt();
+//        double maks=0;
+//        double min=0;
+//        System.out.println("podaj " + n + " liczb: ");
+//        for(int i=0; i<n; i++)
+//        {
+//            double a=scaner.nextDouble();
+//            if(i==0)
+//            {
+//                maks=a;
+//                min=a;
+//            }
+//            else
+//            {
+//                if(a>maks)
+//                    maks=a;
+//                else
+//                {
+//                    if(a<min)
+//                        min=a;
+//                }
+//            }
+//        }
+//        System.out.println("maksymalna: "+maks+"\nminimalna: "+min);
+
+//        //zad2.5
+//        Scanner scaner = new Scanner(System.in);
+//        System.out.println("podaj n: ");
+//        int n=scaner.nextInt();
+//        int pary=0;
+//        double b=0;
+//        System.out.println("podaj " + n + " liczb: ");
+//        for(int i=0; i<n; i++)
+//        {
+//            double a=scaner.nextDouble();
+//            if(i==0)
+//                b=a;
+//            else
+//            {
+//                if(b>0 && a>0)
+//                {
+//                    pary++;
+//                }
+//                b=a;
+//            }
+//        }
+//        System.out.println(pary);
+        
+    }
+}
