@@ -1,0 +1,128 @@
+public class Main {
+
+    public static void main(String[] args) {
+        //zad1
+        java.lang.System.out.println(31 + 29 + 31 + "\n");
+
+        //zad2
+        int suma = 0;
+        for (int i = 0; i <= 10; i++) {
+            suma += i;
+        }
+        java.lang.System.out.println(suma + "\n");
+
+        //zad3
+        int iloczyn = 1;
+        for (int i = 1; i <= 10; i++) {
+            iloczyn *= i;
+        }
+        java.lang.System.out.println(iloczyn + "\n");
+
+        //zad4
+        int saldo = 1000;
+        for (int i = 0; i < 4; i++) {
+            saldo *= 1.06;
+        }
+        java.lang.System.out.println(saldo + "\n");
+
+        //zad5
+        java.lang.System.out.println("______\n" + "|Java|\n" + "------\n");
+
+        //zad6
+        java.lang.System.out.println("  /////\n" +
+                " +\"\"\"\"\"+\n" +
+                "(| o o |)\n" +
+                "  | ^ |\n" +
+                " | `-' |\n" +
+                " +-----+");
+
+        //zad7
+        java.lang.System.out.println("\n" +
+                "**    *     *     *******     *     *        *     *\n" +
+                "* *   *    * *       *       * *    *        *    * *\n" +
+                "*   * *   *****      *      *****   *        *   *****\n" +
+                "*    **  *     *     *     *     *  *******  *  *     *\n");
+
+        //zad8
+        java.lang.System.out.println("\n" +
+                "   +\n" +
+                "  + +\n" +
+                " +   +\n" +
+                "+_____+\n" +
+                "| .-. |\n" +
+                "| | | |\n" +
+                "+_+_+_+\n");
+
+        //zad9
+        java.lang.System.out.println("\n" +
+                "/|__/|       ~~~~~ \n" +
+                "| -.-|    ~  Hello  ~\n" +
+                "|    | < ~   Junior   ~\n" +
+                "(|.|.|)   ~  Coder!  ~\n" +
+                "             ~~~~~~\n");
+
+        //zad10
+        java.lang.System.out.println("Twój Vincent\n" + "Milczenie owiec\n" + "Joker\n");
+
+        //zad11
+        java.lang.System.out.println("Umrzeć - tego nie robi się kotu.\n" +
+                "Bo co ma począć kot\n" +
+                "w pustym mieszkaniu.\n" +
+                "Wdrapywać się na ściany.\n" +
+                "Ocierać między meblami.\n" +
+                "Nic niby tu nie zmienione,\n" +
+                "a jednak pozamieniane.\n" +
+                "Niby nie przesunięte,\n" +
+                "a jednak porozsuwane.\n" +
+                "I wieczorami lampa już nie świeci.\n" +
+                "\n" +
+                "Słychać kroki na schodach,\n" +
+                "ale to nie te.\n" +
+                "Ręka, co kładzie rybę na talerzyk,\n" +
+                "także nie ta, co kładła.\n" +
+                "\n" +
+                "Coś się tu nie zaczyna\n" +
+                "w swojej zwykłej porze.\n" +
+                "Coś się tu nie odbywa\n" +
+                "jak powinno.\n" +
+                "Ktoś tutaj był i był,\n" +
+                "a potem nagle zniknął\n" +
+                "i uporczywie go nie ma.\n" +
+                "\n" +
+                "Do wszystkich szaf sie zajrzało.\n" +
+                "Przez półki przebiegło.\n" +
+                "Wcisneęł się pod dywan i sprawdziło.\n" +
+                "Nawet złamało zakaz\n" +
+                "i rozrzuciło papiery.\n" +
+                "Co więcej jest do zrobienia.\n" +
+                "Spać i czekać.\n" +
+                "\n" +
+                "Niech no on tylko wróci,\n" +
+                "niech no sie pokaże.\n" +
+                "Już on się dowie,\n" +
+                "że tak z kotem nie można.\n" +
+                "Będzie się szło w jego stronę\n" +
+                "jakby się wcale nie chciało,\n" +
+                "pomalutku,\n" +
+                "na bardzo obrażonych łapach.\n" +
+                "I żadnych skoków pisków na początek.\n");
+
+        //zad12
+        java.lang.System.out.println(" *   *   *   *   *   *  ========================================\n" +
+                "   *   *   *   *   *    ========================================\n" +
+                " *   *   *   *   *   *  ========================================\n" +
+                "   *   *   *   *   *    ========================================\n" +
+                " *   *   *   *   *   *  ========================================\n" +
+                "   *   *   *   *   *    ========================================\n" +
+                " *   *   *   *   *   *  ========================================\n" +
+                "   *   *   *   *   *    ========================================\n" +
+                " *   *   *   *   *   *  ========================================\n" +
+                "================================================================\n" +
+                "================================================================\n" +
+                "================================================================\n" +
+                "================================================================\n" +
+                "================================================================\n" +
+                "================================================================\n" +
+                "================================================================\n");
+    }
+}
